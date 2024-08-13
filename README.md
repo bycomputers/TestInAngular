@@ -1,7 +1,9 @@
 # TestInAngular
 
 Run `npm i`
+
 Run `npm install -g @angular/cli `
+
 Run `ng serve`
 
 ## Development server
