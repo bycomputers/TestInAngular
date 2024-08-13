@@ -1,0 +1,42 @@
+<div>
+  <div class='row'>
+    <header>
+      <div class="header">
+        <div class="inner-wrapper">
+          <div class="logo">
+            <div class="logo-right">
+              <div class="semel-medina semel"><img src="https://publiccomplaints.court.gov.il/Content/images/semel-medina.PNG" alt="סמל המדינה"></div>
+              <div class="semel-office semel"></div>
+              <div class="office-description" style="height: 53px;">
+                <p>מדינת ישראל</p>
+                <p class="bold-text">הנהלת בתי המשפט</p>
+                <p class="bold-text"></p>
+              </div>
+            </div>
+            <div class="logo-left">
+              <a title="http://gov.il/" class="noPrint" href="http://gov.il/" target="_blank">
+                <img src="https://publiccomplaints.court.gov.il/Content/images/semel-mimshal-zamin.PNG" alt="gov.il">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-main-title">
+        <div class="inner-wrapper">
+          <h1 class="title">פניות הציבור</h1>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div class='row'>
+    <div class='col-sm-12 body-content'>
+      <ng-http-loader></ng-http-loader>
+      <alert></alert>
+      <confirm-dialog-component></confirm-dialog-component>
+      <alert-popup-component></alert-popup-component>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

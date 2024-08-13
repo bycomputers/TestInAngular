@@ -1,0 +1,25 @@
+﻿<div class="modal" [class.show-dialog]="dialogService.confirmDialogData.showDialog" id="confirmationMessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog dialog" role="document" *ngIf="open">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button style="border: 1px solid;" type="button" class="close" data-dismiss="modal" (click)="cancel()" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="myModalLabel">{{dialogService.confirmDialogData.title}}</h2>
+      </div>
+      <div class="modal-body">
+        {{dialogService.confirmDialogData.body}}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" (click)="confirm()">אישור</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" (click)="cancel()">ביטול</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+﻿<div class="do-not-print alert alert-{{dialogService.alertPopUpData.classPopup}}" *ngIf="dialogService.alertPopUpData.showPopup" role="alert" (click)="close()" >
+    <strong>{{dialogService.alertPopUpData.title}}</strong>
+
+    <div *ngFor="let b of dialogService.alertPopUpData.body">
+        <div style="text-align: right;" [innerHTML]="b"></div>
+        <!-- <br/> -->
+    </div>
+</div>
+
+

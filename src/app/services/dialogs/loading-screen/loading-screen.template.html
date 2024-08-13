@@ -1,0 +1,6 @@
+﻿<div [class.dimScreen]="dialogService.isLoading" *ngIf="dialogService.isLoading"><!--||dialogService.isGridLoading-->
+    <div [class.alert]="dialogService.isLoading">
+        <img [src]="urlLoading" />
+    </div>
+</div>
+
